@@ -4,25 +4,24 @@ import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
-const Home = () => {
+const Home = ({ contador }) => {
 	return (
-		<div className="text-center">
-            
 
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div className="digitos row align-items-start">
+			<div className="col-md-2"><h1>{contador}</h1></div>
+			<div className="col-md-2"><h1>{contador}</h1></div>
+			<div className="col-md-2"><h1>{contador}</h1></div>
+			<div className="col-md-2"><h1>{contador}</h1></div>
+			<div className="col-md-2"><h1>{contador}</h1></div>
+			<div className="col-md-2"><h1>{contador}</h1></div>
 		</div>
+
+
+
 	);
 };
+
+
+
 
 export default Home;
