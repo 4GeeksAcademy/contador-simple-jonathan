@@ -1,3 +1,24 @@
-.digitos{
-    background-color: black;
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.crono {
+  display: flex;
+  gap: 10px;
+}
+
+.digito {
+  background-color: #1e1e1e;
+  color:white;
+  font-size: 60px;
+  width: 70px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }

@@ -5,19 +5,15 @@ import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
 const Home = ({ contador }) => {
+	const digitos = String(contador).padStart(6, "0").split("");
+
 	return (
-
-		<div className="digitos row align-items-start">
-			<div className="col-md-2"><h1>{contador}</h1></div>
-			<div className="col-md-2"><h1>{contador}</h1></div>
-			<div className="col-md-2"><h1>{contador}</h1></div>
-			<div className="col-md-2"><h1>{contador}</h1></div>
-			<div className="col-md-2"><h1>{contador}</h1></div>
-			<div className="col-md-2"><h1>{contador}</h1></div>
+		<div className="crono">
+			<div className="digito">⌚</div>
+			{digitos.map((digito, index) => (
+				<div className="digito" key={index}>{digito}</div>
+			))}
 		</div>
-
-
-
 	);
 };
 
